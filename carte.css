@@ -1,0 +1,105 @@
+/* styles.css */
+body,
+html {
+  height: 100%;
+  margin: 0;
+  overflow: hidden;
+}
+
+.background {
+  width: 100%;
+  height: 100%;
+  background-image: url("image/3D_Animation_Style_cr_une_carte_de_jeu_coeur_avec_un_backgroun_0.jpg"); /* Remplacez 'votre-image-animee.gif' par le chemin de votre image animée */
+  background-size: cover;
+  animation: slide 10s linear infinite; /* Animation de défilement infini */
+}
+
+@keyframes slide {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: 100% 0%;
+  }
+}
+/* styles.css */
+body {
+  background-color: #aebcd3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.logo {
+  font-size: 36px;
+  color: #ff5733;
+  animation: spin 2s linear infinite, changeColor 2s alternate infinite;
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes changeColor {
+  0% {
+    color: #ff5733;
+  }
+  100% {
+    color: #33ff57;
+  }
+}
+/* styles.css */
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: #fff;
+  transition: transform 0.5s;
+  font-size: 36px;
+  color: #ff5733;
+  animation: spin 2s linear infinite, changeColor 2s alternate infinite;
+}
+
+.card.flipped {
+  transform: rotateY(180deg);
+}
+/* styles.css */
+.card {
+  width: 100px;
+  height: 150px;
+  background-color: white;
+  border: 1px solid #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.top,
+.bottom {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  padding: 5px;
+}
+
+.center {
+  flex-grow: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.value {
+  font-size: 20px;
+}
+
+.suit {
+  font-size: 30px;
+}

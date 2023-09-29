@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>quiz</title>
+  </head>
+  <body>
+    <div class="container">
+      <!-- Ajoutez ici le contenu de votre application de quiz -->
+    </div>
+
+    <h1>Jeu de QCM</h1>
+
+    <!-- Question 1 -->
+    <div class="question">
+      <p>Question 1: Quelle est la capitale de la France ?</p>
+      <input type="radio" name="q1" value="Paris" /> Paris<br />
+      <input type="radio" name="q1" value="Londres" /> Londres<br />
+      <input type="radio" name="q1" value="Berlin" /> Berlin<br />
+    </div>
+
+    <!-- Question 2 -->
+    <div class="question">
+      <p>Question 2: Combien de planètes dans notre système solaire ?</p>
+      <input type="radio" name="q2" value="8" /> 8<br />
+      <input type="radio" name="q2" value="9" /> 9<br />
+      <input type="radio" name="q2" value="7" /> 7<br />
+    </div>
+
+    <!-- Bouton de soumission -->
+    <input type="submit" value="Soumettre" onclick="calculerScore()" />
+
+    <!-- Résultats -->
+    <div id="resultat">Votre score sera affiché ici.</div>
+
+    <div id="quiz"></div>
+    <div id="result"></div>
+
+    <link rel="stylesheet" href="cart.js" />
+
+    <script></script>
+  </body>
+</html>
